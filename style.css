@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+:root {
+  /* colors */
+  --clr-primary: hsl(212, 45%, 89%);
+  --clr-secodary: hsl(0, 0%, 100%);
+  --clr-accent: hsl(224, 5%, 57%);
+  --clr-shadow: hsl(280, 15%, 72%);
+  /* font */
+  --ff-primary: Outfit;
+
+  --fs-p: 15px;
+  /* spacing */
+  --m-img: 1rem;
+  --m-text: 1.5rem;
+
+  --p-primary: 1rem;
+
+  --gap-primary: 1rem;
+}
+
+body {
+  background-color: var(--clr-primary);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.card {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.parent {
+  background-color: var(--clr-secodary);
+  width: 325px;
+  height: 500px;
+  padding: var(--p-primary);
+  border-radius: 15px;
+  display: grid;
+  gap: var(--gap-primary);
+  box-shadow: 4px 4px 20px var(--clr-shadow);
+}
+img {
+  width: 100%;
+  display: block;
+  border-radius: 15px;
+}
+h1 {
+  text-align: center;
+  font-family: var(--ff-primary);
+}
+
+p {
+  text-align: center;
+  color: var(--clr-accent);
+  margin-bottom: 2rem;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-p);
+  margin-left: var(--m-text);
+  margin-right: var(--m-text);
+}
